@@ -211,7 +211,8 @@ const HomePage = () => {
                                             transition={{ delay: 1, duration: 1 }}
                                         >
                                             <FaRegPaperPlane className="text-xl" />
-                                            Start Your Application
+                                            <Link to={"/all-visas"}>Start Your Application</Link>
+
                                         </motion.button>
                                         <motion.button
                                             className="flex items-center gap-2 border-2 border-white hover:bg-white hover:text-blue-600 text-white py-2 px-6 rounded-full font-medium transition duration-300"
@@ -220,7 +221,8 @@ const HomePage = () => {
                                             transition={{ delay: 1.2, duration: 1 }}
                                         >
                                             <FaListAlt className="text-xl" />
-                                            See Visa Types
+                                            <Link to={"/all-visas"}> See Visa Types</Link>
+
                                         </motion.button>
                                     </div>
 
@@ -295,7 +297,7 @@ const HomePage = () => {
                                     whileTap={{ scale: 0.95 }}
                                     className="mt-10 px-6 py-3 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-600 transition duration-300 z-10"
                                 >
-                                    Get Started
+                                    <Link to={"/all-visas"}>  Get Started</Link>
                                 </motion.button>
                             </div>
                         </SwiperSlide>

@@ -60,13 +60,13 @@ const router = createBrowserRouter([
 
             },
             {
-                path: "all-visas",
+                path: "/all-visas",
                 element: <AllVisas></AllVisas>,
                 loader: () => fetch("https://visa-quest-server.vercel.app/visas")
 
             },
             {
-                path: "all-visas/visas/:id",
+                path: "/all-visas/visas/:id",
                 element: <PrivateRout><VisaDetails></VisaDetails></PrivateRout>,
                 loader: ({ params }) => fetch(`https://visa-quest-server.vercel.app/visas/${params.id}`)
             }
