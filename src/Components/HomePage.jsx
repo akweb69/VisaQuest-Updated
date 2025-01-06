@@ -51,20 +51,6 @@ const HomePage = () => {
             </Helmet>
             {/* Page Wrapper */}
             <div className="w-full min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 relative">
-                {/* Theme Toggle Button */}
-                {/* <div className="absolute top-5 right-5 z-50">
-                    <button
-                        onClick={() => setDarkMode(!darkMode)}
-                        className="p-3 rounded-full bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 shadow-lg transition-transform transform hover:scale-110 hover:rotate-12 focus:outline-none"
-                    >
-                        {darkMode ? (
-                            <FaMoon className="text-2xl" />
-                        ) : (
-                            <FaSun className="text-2xl" />
-                        )}
-                    </button>
-                </div> */}
-
 
                 {/* Swiper Slider */}
                 <div className="min-h-screen w-full">

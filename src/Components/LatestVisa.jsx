@@ -17,11 +17,11 @@ const LatestVisa = ({ darkMode }) => {
     }
     return (
         <div className={`w-full min-h-screen ${!darkMode ? "bg-[rgb(0,0,31)]" : "bg-white"} flex justify-center items-center`}>
-            <div className="w-11/12 mx-auto py-20 flex flex-col justify-center items-center ">
+            <div className="w-11/12 mx-auto border py-20 flex flex-col  items-center ">
                 <div className="text-transparent bg-gradient-to-r from-pink-500 font-quest via-purple-500 to-blue-500 mb-10 bg-clip-text text-3xl md:text-5xl font-bold">
                     Latest Visas
                 </div>
-                <div className="md:grid md:grid-cols-2 lg:grid-cols-3 gap-10 space-y-6 md:space-y-0">
+                <div className="md:grid md:grid-cols-3 lg:grid-cols-4 gap-5 space-y-6 md:space-y-0 w-full">
                     {
                         visaData?.map(visa => <VisaCard darkMode={darkMode} key={visa._id} visa={visa}></VisaCard>)
                     }
