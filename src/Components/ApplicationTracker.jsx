@@ -41,12 +41,15 @@ const ApplicationTracker = ({ darkMode }) => {
     };
 
     return (
-        <div className={`py-20 flex flex-col justify-center items-center ${!darkMode ? "bg-[rgb(0,0,31)]" : "bg-white"} text-white`}>
-            <div className={`md:max-w-lg w-11/12 mx-auto p-6 ${!darkMode ? "bg-[rgb(0,0,31)] text-white" : "bg-base-200 text-black"} shadow-lg rounded-lg border-2 border-[#fff]`}>
+        <div className={`py-14 flex flex-col justify-center items-center  ${!darkMode ? "bg-[rgb(0,0,31)]" : "bg-white"} text-white`}>
+            <div className="text-transparent bg-gradient-to-r from-pink-500 font-quest via-purple-500 to-blue-500 pb-14  bg-clip-text text-3xl md:text-5xl font-bold">
+                Visa  Tracking
+            </div>
+            <div className={`border w-11/12 mx-auto p-6 ${!darkMode ? "bg-[rgb(0,0,31)] text-white" : "bg-base-200 text-black"} shadow-lg rounded-lg border-2 border-[#fff]`}>
                 <h1 className="text-2xl font-bold text-center mb-6">
                     Track Your Application
                 </h1>
-                <div className="flex flex-col md:flex-row items-center gap-3 mb-4">
+                <div className="flex flex-col md:flex-row items-cent er gap-3 mb-4">
                     <input
                         type="text"
                         placeholder="Enter Application ID"
@@ -74,7 +77,8 @@ const ApplicationTracker = ({ darkMode }) => {
                 {/* Application Details */}
                 {!loading && applyData && (
                     <div className="w-full border rounded-lg border-purple-900 bg-[rgba(19,24,46,0.6)] mt-4">
-                        <img src={applyData?.countryImg} alt="Country" className="w-full" />
+
+                        <img src={applyData?.countryImg} alt="Country" className="w-full h-[220px] md:h-[500px]" />
                         <div className="flex gap-2 pt-5 justify-between p-4 items-center">
                             <div>
                                 <h1>
@@ -95,6 +99,7 @@ const ApplicationTracker = ({ darkMode }) => {
                                     className="rounded-full"
                                     src={User?.photoURL}
                                     alt="User"
+                                    referrerPolicy="no-referrer"
                                 />
                             </div>
                         </div>
