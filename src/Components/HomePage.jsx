@@ -318,78 +318,77 @@ const HomePage = () => {
                 <ExploreWorld></ExploreWorld>
             </div>
             {/* Aboout section */}
-            <div className={`w-full min-h-screen flex flex-col justify-center items-center py-20 md:py-0 ${!darkMode ? "from-[rgb(0,0,31)] via-[rgb(0,0,44)] to-[rgb(0,0,55)] bg-gradient-to-b  text-white px-6" : " bg-white text-black px-6"}`}>
-                {/* Header */}
-                <motion.h2
-                    initial={{ opacity: 0, y: -20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
-                    className="text-4xl sm:text-5xl font-bold mb-6 text-center"
-                >
-                    About Visa Quest
-                </motion.h2>
+            <div className={`w-full  py-14 flex flex-col justify-center items-center  ${!darkMode ? "from-[rgb(0,0,31)] via-[rgb(0,0,44)] to-[rgb(0,0,55)] bg-gradient-to-b  text-white" : " bg-white text-black"}`}>
+                <div className=" w-11/12 mx-auto">
+                    {/* Header */}
+                    <div className="text-transparent bg-gradient-to-r from-pink-500 font-quest via-purple-500 to-blue-500 pb-14  bg-clip-text text-3xl md:text-5xl font-bold text-center">
+                        About Us
+                    </div>
 
-                {/* Subheader */}
-                <motion.p
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.3, duration: 0.8 }}
-                    className={`text-lg sm:text-xl ${!darkMode ? "text-gray-200" : "text-gray-700"} text-center max-w-3xl mb-12`}
-                >
-                    Simplifying visa processes with a user-friendly portal that offers real-time tracking, seamless applications, and all necessary visa-related information at your fingertips.
-                </motion.p>
-
-                {/* Features Section */}
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 w-full max-w-5xl">
-                    {/* Feature 1 */}
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.6 }}
-                        className={`flex flex-col items-center ${!darkMode ? "bg-white" : "bg-pink-200"} text-black rounded-lg shadow-lg p-6`}
+                    {/* Subheader */}
+                    <motion.p
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 0.3, duration: 0.8 }}
+                        className={`text-lg sm:text-xl text-center mx-auto ${!darkMode ? "text-gray-300" : "text-gray-700"} text-center max-w-3xl mb-12`}
                     >
-                        <FaGlobe className="text-4xl text-blue-600 mb-4" />
-                        <h3 className="text-xl font-bold mb-2">Global Reach</h3>
-                        <p className="text-center text-sm">
-                            Access visa requirements and details for countries around the globe in one platform.
-                        </p>
-                    </motion.div>
+                        Simplifying visa processes with a user-friendly portal that offers real-time tracking, seamless applications, and all necessary visa-related information at your fingertips.
+                    </motion.p>
 
-                    {/* Feature 2 */}
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.6, delay: 0.2 }}
-                        className={`flex flex-col items-center ${!darkMode ? "bg-white" : "bg-purple-200"} text-black rounded-lg shadow-lg p-6`}>
-                        <FaHandshake className="text-4xl text-blue-600 mb-4" />
-                        <h3 className="text-xl font-bold mb-2">User-Friendly</h3>
-                        <p className="text-center text-sm">
-                            Enjoy a smooth, interactive experience for applying and tracking your visas effortlessly.
-                        </p>
-                    </motion.div>
+                    {/* Features Section */}
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 w-full">
+                        {/* Feature 1 */}
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.8 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.6 }}
+                            className={`flex flex-col items-center ${!darkMode ? "bg-[rgb(0,0,66)] text-gray-400" : "bg-pink-200"} text-black rounded-lg shadow-lg p-6`}
+                        >
+                            <FaGlobe className="text-4xl text-blue-600 mb-4" />
+                            <h3 className="text-xl font-bold mb-2">Global Reach</h3>
+                            <p className="text-center text-sm">
+                                Access visa requirements and details for countries around the globe in one platform.
+                            </p>
+                        </motion.div>
 
-                    {/* Feature 3 */}
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.6, delay: 0.4 }}
-                        className={`flex flex-col items-center ${!darkMode ? "bg-white" : "bg-blue-200"} text-black rounded-lg shadow-lg p-6`}>
-                        <FaChartLine className="text-4xl text-blue-600 mb-4" />
-                        <h3 className="text-xl font-bold mb-2">Real-Time Updates</h3>
-                        <p className="text-center text-sm">
-                            Stay informed with real-time updates and notifications for your visa applications.
-                        </p>
-                    </motion.div>
+                        {/* Feature 2 */}
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.8 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.6, delay: 0.2 }}
+                            className={`flex flex-col items-center ${!darkMode ? "bg-[rgb(0,0,96)] text-gray-400" : "bg-purple-200"} text-black rounded-lg shadow-lg p-6`}>
+                            <FaHandshake className="text-4xl text-blue-600 mb-4" />
+                            <h3 className="text-xl font-bold mb-2">User-Friendly</h3>
+                            <p className="text-center text-sm">
+                                Enjoy a smooth, interactive experience for applying and tracking your visas effortlessly.
+                            </p>
+                        </motion.div>
+
+                        {/* Feature 3 */}
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.8 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.6, delay: 0.4 }}
+                            className={`flex flex-col items-center ${!darkMode ? "bg-[rgb(0,0,66)] text-gray-400" : "bg-blue-200"} text-black rounded-lg shadow-lg p-6`}>
+                            <FaChartLine className="text-4xl text-blue-600 mb-4" />
+                            <h3 className="text-xl font-bold mb-2">Real-Time Updates</h3>
+                            <p className="text-center text-sm">
+                                Stay informed with real-time updates and notifications for your visa applications.
+                            </p>
+                        </motion.div>
+                    </div>
+
+                    {/* Call to Action */}
+                    <div className="text-center">
+                        <motion.button
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.95 }}
+                            className="mt-12 px-8 py-3 bg-indigo-800 text-white font-semibold rounded-lg hover:bg-yellow-600 transition duration-300 "
+                        >
+                            Learn More
+                        </motion.button>
+                    </div>
                 </div>
-
-                {/* Call to Action */}
-                <motion.button
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="mt-12 px-8 py-3 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-600 transition duration-300"
-                >
-                    Learn More
-                </motion.button>
             </div>
             {/* news letter section */}
 

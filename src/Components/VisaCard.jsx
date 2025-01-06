@@ -45,7 +45,7 @@ const VisaCard = ({ visa, darkMode }) => {
 
                 {/* Button Section */}
                 <div className="mt-6 flex justify-center">
-                    <Link to={`all-visas/visas/${_id}`} className="btn btn-wide btn-accent text-white font-semibold rounded-lg py-2 px-6 hover:bg-[rgb(0,0,90)] hover:scale-105 transition-all duration-300">
+                    <Link to={`all-visas/visas/${_id}`} className="btn w-full bg-[rgb(0,0,64)] border-0 text-white font-semibold rounded-lg py-2 px-6 hover:bg-[rgb(0,0,90)] hover:scale-105 transition-all duration-300">
                         View Details
                     </Link>
                 </div>

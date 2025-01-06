@@ -27,17 +27,17 @@ const KeyFeatures = ({ darkMode }) => {
     ];
 
     return (
-        <div className={`${!darkMode ? "bg-gradient-to-b  from-[rgb(0,0,55)] to-[rgb(0,0,77)] text-white" : ""} py-16 px-6`}>
-            <div className="max-w-6xl mx-auto text-center">
+        <div className={`${!darkMode ? "bg-gradient-to-b  from-[rgb(0,0,55)] to-[rgb(0,0,77)] text-white" : ""} pb-14`}>
+            <div className="w-11/12 mx-auto text-center">
                 {/* Section Title */}
-                <motion.h2
-                    className="text-4xl font-bold mb-12 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent"
+                <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
-                >
+                    className="text-transparent bg-gradient-to-r from-pink-500 font-quest via-purple-500 to-blue-500 pb-14  bg-clip-text text-3xl md:text-5xl font-bold text-center">
                     Why Choose Visa Quest ?
-                </motion.h2>
+                </motion.div>
+
 
                 {/* Features Grid */}
                 <motion.div

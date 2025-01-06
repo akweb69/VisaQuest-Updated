@@ -5,16 +5,16 @@ import { FaRegHandshake, FaRegUserCircle, FaRegLightbulb } from 'react-icons/fa'
 import img from "../assets/images/visa-ser2_orig.webp"
 const VisaConsultancy = ({ darkMode }) => {
     return (
-        <div className={`w-full mx-auto py-10  ${darkMode ? "bg-white" : "bg-[rgb(0,0,77)] text-white"}`}>
+        <div className={`w-full mx-auto   ${darkMode ? "bg-white" : "bg-[rgb(0,0,77)] text-white"}`}>
+            <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+                className="text-transparent bg-gradient-to-r from-pink-500 font-quest via-purple-500 to-blue-500 pb-14  bg-clip-text text-3xl md:text-5xl font-bold text-center">
+                Visa Consultancy
+            </motion.div>
             <div className="">
-                <motion.h2
-                    className="text-3xl md:text-5xl font-bold text-center py-6  "
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5 }}
-                >
-                    Visa Consultancy
-                </motion.h2>
+
 
                 <div className="flex justify-center max-h-[300px] overflow-hidden mb-8">
                     <motion.img
@@ -28,7 +28,7 @@ const VisaConsultancy = ({ darkMode }) => {
                 </div>
             </div>
 
-            <div className="w-10/12 mx-auto ">
+            <div className="w-11/12 mx-auto ">
                 <motion.div
                     className="space-y-6 text-lg "
                     initial={{ opacity: 0 }}

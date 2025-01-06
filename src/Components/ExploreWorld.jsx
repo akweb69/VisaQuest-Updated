@@ -38,11 +38,11 @@ const ExploreWorld = () => {
 
     return (
         <div className={`w-full min-h-screen ${!darkMode ? "bg-[rgb(0,0,31)]" : "bg-white"} `}>
-            <div className="text-center text-3xl md:text-5xl font-bold py-10 px-4 text-yellow-400">
+            <div className="text-transparent bg-gradient-to-r from-pink-500 font-quest via-purple-500 to-blue-500 pb-14  bg-clip-text text-3xl md:text-5xl font-bold w-11/12 mx-auto text-center">
                 Explore The World!
             </div>
 
-            <div className="w-10/12 mx-auto">
+            <div className="w-11/12 mx-auto">
                 <Tabs>
                     <TabList className="bg-[rgb(0,0,55)] text-white text-lg">
                         <Tab>Asia</Tab>
