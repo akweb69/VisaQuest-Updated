@@ -11,14 +11,14 @@ const LatestVisa = ({ darkMode }) => {
                 console.log(data)
             })
     }, [])
-    if (visaData.length > 6) {
-        const newVisaData = visaData.slice(0, 6);
+    if (visaData.length > 8) {
+        const newVisaData = visaData.slice(0, 8);
         setVisaData(newVisaData);
     }
     return (
         <div className={`w-full min-h-screen ${!darkMode ? "bg-[rgb(0,0,31)]" : "bg-white"} flex justify-center items-center`}>
-            <div className="w-11/12 mx-auto border py-20 flex flex-col  items-center ">
-                <div className="text-transparent bg-gradient-to-r from-pink-500 font-quest via-purple-500 to-blue-500 mb-10 bg-clip-text text-3xl md:text-5xl font-bold">
+            <div className="w-11/12 mx-auto   flex flex-col  items-center ">
+                <div className="text-transparent bg-gradient-to-r from-pink-500 font-quest via-purple-500 to-blue-500 py-14  bg-clip-text text-3xl md:text-5xl font-bold">
                     Latest Visas
                 </div>
                 <div className="md:grid md:grid-cols-3 lg:grid-cols-4 gap-5 space-y-6 md:space-y-0 w-full">
