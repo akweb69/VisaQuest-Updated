@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 
 const Contact = ({ darkMode }) => {
     return (
-        <div className={`${!darkMode ? "bg-gradient-to-b from-[rgb(0,0,77)] to-[rgb(0,0,31)] text-white" : "text-black"} py-16 px-6`}>
-            <div className="max-w-6xl mx-auto">
+        <div className={`${!darkMode ? "bg-gradient-to-b  from-[rgb(0,0,77)] to-[rgb(0,0,31)] text-white" : "text-black"}`}>
+            <div className="w-11/12  mx-auto">
                 {/* Section Header */}
                 <motion.h2
-                    className="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent"
+                    className="text-4xl font-bold text-center bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent py-14 "
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
@@ -17,7 +17,7 @@ const Contact = ({ darkMode }) => {
                 </motion.h2>
 
                 {/* Contact Grid */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
+                <div className="grid  grid-cols-1 lg:grid-cols-2 items-start gap-12">
                     {/* Left Section: Contact Form */}
                     <motion.div
                         className={`${!darkMode ? "bg-[rgb(0,0,44)]" : "bg-base-200 text-gray-950"} p-8 rounded-lg shadow-lg`}

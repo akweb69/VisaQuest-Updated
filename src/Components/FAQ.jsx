@@ -40,20 +40,27 @@ const FAQ = ({ darkMode }) => {
     ];
 
     return (
-        <div className={`w-full mx-auto p-6 ${!darkMode ? "bg-[rgb(0,0,77)]" : ""}`}>
-            <div className="w-10/12 mx-auto">
-                <h2 className={`text-3xl md:text-5xl font-bold pt-5 text-center ${!darkMode ? "text-white" : ""}`}>FAQ</h2>
+        <div className={`w-full mx-auto ${!darkMode ? "bg-[rgb(0,0,77)]" : ""}`}>
+            <div className="w-11/12 mx-auto">
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1 }}
+                    className="text-transparent bg-gradient-to-r from-pink-500 font-quest via-purple-500 to-blue-500 py-14 bg-clip-text text-3xl md:text-5xl font-bold text-center"
+                >
+                    Frequently Asked Questions
+                </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-                    <div className="flex justify-center items-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5  ">
+                    <div className="flex justify-center  items-start">
                         <img
                             src={faq}
                             alt="FAQ Illustration"
-                            className="w-full "
+                            className="w-full md:w-1/2 "
                         />
                     </div>
 
-                    <div className="space-y-4">
+                    <div className="space-y-4 ">
                         {questions.map((item, index) => (
                             <motion.div
                                 key={index}
