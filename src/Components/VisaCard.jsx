@@ -17,13 +17,13 @@ const VisaCard = ({ visa, darkMode }) => {
 
                 {/* Details Section */}
                 <div className={`${!darkMode ? "text-white" : "text-black"} space-y-1`}>
-                    <div className="flex items-center space-x-2 capitalize">
+                    <div className="flex items-center space-x-2  capitalize">
                         <FaGlobe className="text-blue-400" />
-                        <span><strong>{countryName}</strong></span>
+                        <span><strong className='text-2xl'>{countryName}</strong></span>
                     </div>
                     <div className="flex items-center space-x-2 capitalize">
                         <FaPassport className="text-yellow-400" />
-                        <span> <strong>{Visa_type}</strong></span>
+                        <span> <strong className='text-lg'>{Visa_type}</strong></span>
                     </div>
                     {/* <div className="flex items-center space-x-2 capitalize">
                         <FaClock className="text-green-400" />
@@ -31,7 +31,7 @@ const VisaCard = ({ visa, darkMode }) => {
                     </div> */}
                     <div className="flex items-center space-x-2 capitalize">
                         <FaDollarSign className="text-red-400" />
-                        <span className='flex items-center'><strong className='flex items-center'> {Fee}</strong></span>
+                        <span className='flex items-center'><strong className='flex text-lg items-center'> {Fee}</strong></span>
                     </div>
                     <div className="flex items-center space-x-2 capitalize">
                         <FaCalendarAlt className="text-purple-400" />

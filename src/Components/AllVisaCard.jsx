@@ -19,16 +19,16 @@ const AllVisaCard = ({ visa }) => {
                 <div className="text-white space-y-3">
                     <div className="flex items-center space-x-2 capitalize">
                         <FaGlobe className="text-blue-400" />
-                        <span>Country Name: <strong>{countryName}</strong></span>
+                        <span> <strong className='text-2xl'>{countryName}</strong></span>
                     </div>
                     <div className="flex items-center space-x-2 capitalize">
                         <FaPassport className="text-yellow-400" />
-                        <span>Visa Type: <strong>{Visa_type}</strong></span>
+                        <span><strong className='text-lg'>{Visa_type}</strong></span>
                     </div>
 
                     <div className="flex items-center space-x-2 capitalize">
                         <FaDollarSign className="text-red-400" />
-                        <span className='flex items-center'>Total Fees: <strong className='flex items-center'> <FaDollarSign className="text-red-400" /> {Fee}</strong></span>
+                        <span className='flex items-center'><strong className='flex text-lg items-center'>  {Fee}</strong></span>
                     </div>
                     <div className="flex items-center space-x-2 capitalize">
                         <FaCalendarAlt className="text-purple-400" />
