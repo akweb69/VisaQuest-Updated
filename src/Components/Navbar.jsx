@@ -70,6 +70,7 @@ const Navbar = () => {
                         }
                         <li className=" hover:text-purple-400"><NavLink className="px-3 py-2" to="/Gallery">Gallery</NavLink></li>
                         <li className=" hover:text-purple-400"><NavLink className="px-3 py-2" to="/blogs">Blogs</NavLink></li>
+                        <li className=" hover:text-purple-400"><NavLink className="px-3 py-2" to="/faq">Faq</NavLink></li>
 
 
                     </ul>
@@ -226,13 +227,22 @@ const Navbar = () => {
                     <ul className="flex flex-col items-center space-y-4 py-4">
                         <li><NavLink to="/" onClick={() => setIsMenuOpen(false)}>Home</NavLink></li>
                         <li><NavLink to="/all-visas" onClick={() => setIsMenuOpen(false)}>All Visas</NavLink></li>
-                        <li><NavLink to="/add-visa" onClick={() => setIsMenuOpen(false)}>Add Visa</NavLink></li>
-                        <li><NavLink to="/my-added-visas" onClick={() => setIsMenuOpen(false)}>My Added Visas</NavLink></li>
-                        <li><NavLink to="/my-application-visa" onClick={() => setIsMenuOpen(false)}>My Visa Applications</NavLink></li>
+                        {
+                            User && User?.email ? <li><NavLink to="/add-visa" onClick={() => setIsMenuOpen(false)}>Add Visa</NavLink></li> : ""
+                        }
+                        {
+                            User && User?.email ? <li><NavLink to="/my-added-visas" onClick={() => setIsMenuOpen(false)}>My Added Visas</NavLink></li> : ""
+                        }
+                        {
+                            User && User?.email ? <li><NavLink to="/my-application-visa" onClick={() => setIsMenuOpen(false)}>My Visa Applications</NavLink></li> : ''
+                        }
 
                         <li><NavLink to="/Gallery" onClick={() => setIsMenuOpen(false)}>Gallery</NavLink></li>
+                        <li><NavLink to="/faq" onClick={() => setIsMenuOpen(false)}>Faq</NavLink></li>
                         <li><NavLink to="/blogs" onClick={() => setIsMenuOpen(false)}>Blogs</NavLink></li>
-                        <li><NavLink to="/users" onClick={() => setIsMenuOpen(false)}>Admin Pannel</NavLink></li>
+                        {
+                            User && User.email ? <li><NavLink to="/users" onClick={() => setIsMenuOpen(false)}>Admin Pannel</NavLink></li> : ""
+                        }
                         {
                             User && User.email ?
                                 <div>

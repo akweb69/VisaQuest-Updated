@@ -33,20 +33,21 @@ const AllVisas = () => {
             <Helmet>
                 <title>All Visas | Visa Quest</title>
             </Helmet>
-            <div className="w-11/12 mx-auto rounded-lg  flex justify-between mb-4 border-green-300 border overflow-hidden">
-                <select onChange={handleChange} name="filterInput" className="select select-accent w-full rounded-none bg-transparent text-white outline-none">
-                    <option disabled selected>Filter By Visa Type</option>
-                    <option value={"student"} className="text-black">Student Visa</option>
-                    <option value={"official"} className="text-black">Official Visa</option>
-                    <option value={"tourist"} className="text-black">Tourist Visa</option>
-                    <option value={"business"} className="text-black">Business Visa </option>
-                    <option value={"work"} className="text-black">Work Visa</option>
-                </select>
-                <div onClick={handleFilterBtn} className="flex cursor-pointer items-center justify-center gap-1 px-4 md:px-10 bg-violet-600 text-white">
-                    <TbFilterSearch className="text-green-200 " />
-                    Filter
-                </div>
-            </div>
+            <div className="w-11/12 mx-auto flex justify-end">
+                <div className="md:w-4/12 w-full rounded-lg  flex justify-between mb-4 border-green-300 border overflow-hidden">
+                    <select onChange={handleChange} name="filterInput" className="select select-accent w-full rounded-none bg-transparent text-white outline-none">
+                        <option disabled selected>Filter By Visa Type</option>
+                        <option value={"student"} className="text-black">Student Visa</option>
+                        <option value={"official"} className="text-black">Official Visa</option>
+                        <option value={"tourist"} className="text-black">Tourist Visa</option>
+                        <option value={"business"} className="text-black">Business Visa </option>
+                        <option value={"work"} className="text-black">Work Visa</option>
+                    </select>
+                    <div onClick={handleFilterBtn} className="flex cursor-pointer items-center justify-center gap-1 px-4 md:px-10 bg-violet-600 text-white">
+                        <TbFilterSearch className="text-green-200 " />
+                        Filter
+                    </div>
+                </div></div>
             <div className="w-11/12 mx-auto py-4 flex flex-col justify-center items-center ">
                 <div className="text-transparent bg-gradient-to-r from-pink-500 font-quest via-purple-500 to-blue-500 mb-10 bg-clip-text text-3xl md:text-5xl font-bold">
                     {

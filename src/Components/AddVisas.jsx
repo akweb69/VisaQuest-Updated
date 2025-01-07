@@ -83,14 +83,14 @@ const AddVisas = () => {
 
     }
     return (
-        <div className=' bg-gradient-to-tr py-4 md:py-20 from-[rgb(0,0,34)] to-[rgb(0,0,44)] min-h-screen'>
+        <div className=' bg-gradient-to-tr  py-4 md:py-20 from-[rgb(0,0,34)] to-[rgb(0,0,44)] min-h-screen'>
             <Helmet>
                 <title> Add Visa | Visa Quest</title>
             </Helmet>
             <div className="w-11/12 h-full mx-auto flex flex-col justify-center items-center py-12 md:py-0">
 
 
-                <div className="w-full">
+                <div className="w-full z-10">
                     <div className="md:w-10/12 w-full form-add mx-auto">
                         <form onSubmit={handleSubmit} className="w-full md:p-12 p-4 rounded-[1rem] md:grid grid-cols-2 gap-5 bg-[rgb(0,0,51)]">
                             <h1 className="bg-gradient-to-tr from-purple-600 to-pink-700 bg-clip-text text-2xl md:text-3xl lg:text-4xl font-extrabold font-quest mb-5 text-transparent col-span-2 text-center">Add A New Visa </h1>

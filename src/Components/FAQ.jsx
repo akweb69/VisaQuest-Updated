@@ -1,8 +1,9 @@
 // FAQ.js
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaQuestionCircle } from 'react-icons/fa';
 import faq from "../assets/images/Questions-pana.png"
+import { useLocation } from 'react-router';
 
 const FAQ = ({ darkMode }) => {
     const [activeIndex, setActiveIndex] = useState(null);
@@ -10,7 +11,13 @@ const FAQ = ({ darkMode }) => {
     const handleToggle = (index) => {
         setActiveIndex(activeIndex === index ? null : index);
     };
-
+    const location = useLocation();
+    const [full, setFull] = useState(false)
+    useEffect(() => {
+        if (location.pathname === "/faq") {
+            setFull(true)
+        }
+    }, [location])
     const questions = [
         {
             question: 'What is your return policy?',
@@ -40,7 +47,7 @@ const FAQ = ({ darkMode }) => {
     ];
 
     return (
-        <div className={`w-full mx-auto ${!darkMode ? "bg-[rgb(0,0,77)]" : ""}`}>
+        <div className={`w-full mx-auto ${!darkMode ? "bg-[rgb(0,0,77)]" : ""}  ${full && "min-h-screen"}`}>
             <div className="w-11/12 mx-auto">
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}

@@ -50,10 +50,10 @@ const HomePage = () => {
                 <title>Home | Visa Quest</title>
             </Helmet>
             {/* Page Wrapper */}
-            <div className="w-full min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 relative">
+            <div className="w-full max-h-[70vh] bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 relative">
 
                 {/* Swiper Slider */}
-                <div className="min-h-screen w-full">
+                <div className="h-[70vh] w-full">
                     <Swiper
                         spaceBetween={30}
                         centeredSlides={true}
@@ -72,7 +72,7 @@ const HomePage = () => {
                     >
                         {/* Slide 1 */}
                         <SwiperSlide>
-                            <div className="relative w-full min-h-screen flex items-center justify-center bg-s1 bg-cover bg-center bg-blend-overlay">
+                            <div className="relative w-full h-[70vh] flex items-center justify-center bg-s1 bg-cover bg-center bg-blend-overlay">
                                 {/* Overlay */}
                                 <div className="absolute inset-0 bg-black/50"></div>
 
@@ -136,7 +136,7 @@ const HomePage = () => {
 
                         {/* Slide 2 */}
                         <SwiperSlide>
-                            <div className="relative w-full min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat bg-s4 bg-blend-overlay">
+                            <div className="relative w-full h-[70vh] flex items-center justify-center bg-cover bg-center bg-no-repeat bg-s4 bg-blend-overlay">
                                 {/* Dark overlay */}
                                 <div className="absolute inset-0 bg-black/40"></div>
 
@@ -227,7 +227,7 @@ const HomePage = () => {
 
                         {/* Slide 3 */}
                         <SwiperSlide>
-                            <div className="w-full min-h-screen flex flex-col items-center justify-center text-center bg-s3 bg-left bg-no-repeat bg-cover bg-[rgba(0,0,0,0.4)] bg-blend-overlay relative">
+                            <div className="w-full h-[70vh] flex flex-col items-center justify-center text-center bg-s3 bg-left bg-no-repeat bg-cover bg-[rgba(0,0,0,0.4)] bg-blend-overlay relative">
                                 {/* Background Overlay */}
                                 <motion.div
                                     initial={{ opacity: 0 }}

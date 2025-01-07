@@ -8,7 +8,7 @@ const Footer = () => {
 
     return (
         <footer className={`${darkMode ? "bg-base-200 text-black md:py-20" : "bg-[#00001f] md:py-20 text-white py-12"}`}>
-            <div className="relative z-10 max-w-6xl mx-auto">
+            <div className="relative z-10 w-11/12 mx-auto">
                 <h1 className="text-4xl font-bold text-center mb-4">
                     Visa Quest
                 </h1>

@@ -17,6 +17,7 @@ import Blogs from '../Components/Blogs';
 import Gallery from '../Components/Gallery';
 import Profile from '../Components/Profile';
 import UpdateProfile from '../Components/UpdateProfile';
+import FAQ from '../Components/FAQ';
 
 const router = createBrowserRouter([
     {
@@ -39,6 +40,11 @@ const router = createBrowserRouter([
                 path: "/profile",
                 element: <Profile></Profile>
             },
+            {
+                path: "/faq",
+                element: <FAQ></FAQ>
+            },
+
             {
                 path: "/update_profile",
                 element: <UpdateProfile></UpdateProfile>

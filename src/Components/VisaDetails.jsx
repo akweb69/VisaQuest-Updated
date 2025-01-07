@@ -86,12 +86,12 @@ const VisaDetails = () => {
             </div>
 
             {/* Visa Details Content */}
-            <div className="w-10/12 mt-[150px] sm:mt-[200px] md:mt-[300px] mx-auto bg-gradient-to-br from-indigo-900 via-purple-800 to-blue-900 rounded-lg shadow-lg md:p-10 py-6 px-4 text-white animate-fadeIn">
+            <div className="w-11/12 mt-[150px] sm:mt-[200px] md:mt-[300px] mx-auto bg-gradient-to-br from-indigo-900 via-purple-800 to-blue-900 rounded-lg shadow-lg md:p-10 py-6 px-4 text-white animate-fadeIn">
                 <h1 className="text-3xl font-bold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-blue-400">Details Information Of {countryName}</h1>
 
                 {/* Content Sections */}
                 <div className="space-y-6">
-                    <div className="flex items-center space-x-4"><FaGlobe className="text-blue-300 text-xl" /><span className="text-lg font-medium">Description: {Description}</span></div>
+                    <div className="flex items-center space-x-4"><FaGlobe className="text-blue-300 text-xl" /><span className="text-lg font-medium flex-1">Description: {Description}</span></div>
                     <div className="flex items-center space-x-4"><FaFileAlt className="text-green-300 text-xl" /><span className="text-lg font-medium"><strong>Visa Type:</strong> {Visa_type}</span></div>
                     <div className="flex items-center space-x-4"><FaListAlt className="text-yellow-300 text-xl" /><span className="text-lg font-medium"><strong>Application Method: </strong>{application_method}</span></div>
                     <div className="flex items-center space-x-4"><FaClock className="text-purple-300 text-xl" /><span className="text-lg font-medium"><strong>Processing Time:</strong> {Processing_time}</span></div>

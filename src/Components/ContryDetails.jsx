@@ -16,7 +16,7 @@ const ContryDetails = () => {
             <Helmet>
                 <title> {country_name}| Visa Quest</title>
             </Helmet>
-            <div className="w-10/12 mx-auto">
+            <div className="w-11/12 mx-auto">
                 <div className="md:grid grid-cols-3  gap-10 ">
                     <div className="col-span-2 text-white space-y-2">
                         <div className="text-2xl md:text-4xl text-white">

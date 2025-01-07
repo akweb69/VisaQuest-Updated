@@ -95,9 +95,9 @@ const Login = () => {
                 <div className="">
                     <img className='w-full' src={img1} alt="" />
                 </div>
-                <div className=" h-full flex justify-center md:justify-start items-center ">
+                <div className=" h-full z-10 flex justify-center md:justify-start items-center ">
                     <div className="form-box md:w-10/12 w-full">
-                        <div className="md:p-10 p-4 py-10  w-full  bg-[rgb(0,0,44)] rounded-[1rem]">
+                        <div className="md:p-10  p-4 py-10  w-full  bg-[rgb(0,0,44)] rounded-[1rem]">
                             <div className="">
                                 <form onSubmit={handleSubmit} >
                                     <h1 className="text-center text-3xl md:text-4xl font-bold font-quest text-purple-400 mb-4 md:mb-10">Login</h1>
